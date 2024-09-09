@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aprenda a Criar uma Página na Internet</title>
+    <title>Como Criar uma Página na Internet</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,39 +11,75 @@
         <nav>
             <ul>
                 <li><a href="#intro">Introdução</a></li>
-                <li><a href="#conteudo">Conteúdo</a></li>
+                <li><a href="#html">HTML</a></li>
+                <li><a href="#css">CSS</a></li>
+                <li><a href="#js">JavaScript</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
 
     <section id="intro" class="hero">
-        <h1>Aprenda a Criar uma Página na Internet</h1>
-        <p>Um guia passo a passo para começar a desenvolver suas próprias páginas web.</p>
-        <button id="learnMoreBtn">Saiba Mais</button>
+        <h1>Como Criar uma Página na Internet</h1>
+        <p>Um guia completo e passo a passo para começar a criar suas próprias páginas web.</p>
     </section>
 
-    <section id="conteudo">
-        <h2>Conteúdo</h2>
-        <div class="cards">
-            <div class="card">
-                <h3>HTML</h3>
-                <p>O HTML é a estrutura básica de qualquer página web. Aprenda como usar tags e criar seu primeiro documento.</p>
-            </div>
-            <div class="card">
-                <h3>CSS</h3>
-                <p>O CSS é usado para estilizar sua página. Descubra como adicionar cores, fontes e layouts ao seu design.</p>
-            </div>
-            <div class="card">
-                <h3>JavaScript</h3>
-                <p>O JavaScript traz interatividade para sua página. Aprenda como adicionar funcionalidades dinâmicas e responder a eventos.</p>
-            </div>
-        </div>
+    <section id="html">
+        <h2>Passo 1: Criar o Documento HTML</h2>
+        <p>O HTML (HyperText Markup Language) é a estrutura básica da sua página web. Ele define o conteúdo e a estrutura de sua página. Aqui estão os principais elementos que você usará:</p>
+        <ul>
+            <li><strong>&lt;html&gt;</strong> - Elemento raiz que envolve toda a página.</li>
+            <li><strong>&lt;head&gt;</strong> - Contém meta-informações e links para estilos e scripts.</li>
+            <li><strong>&lt;body&gt;</strong> - Contém o conteúdo visível da página.</li>
+        </ul>
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="pt-BR"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Título da Página&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Bem-vindo à minha página!&lt;/h1&gt;
+    &lt;p&gt;Este é o conteúdo da página.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </section>
+
+    <section id="css">
+        <h2>Passo 2: Adicionar Estilo com CSS</h2>
+        <p>O CSS (Cascading Style Sheets) é usado para estilizar sua página web. Com o CSS, você pode definir cores, fontes, layouts e muito mais. Você pode incluir CSS diretamente no HTML, mas é recomendado usar um arquivo separado.</p>
+        <pre><code>body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+h1 {
+    color: #6e45e2;
+}
+
+p {
+    font-size: 1.2em;
+}</code></pre>
+        <p>Para vincular seu arquivo CSS ao HTML, adicione a seguinte linha dentro da tag &lt;head&gt; do seu documento HTML:</p>
+        <pre><code>&lt;link rel="stylesheet" href="style.css"&gt;</code></pre>
+    </section>
+
+    <section id="js">
+        <h2>Passo 3: Adicionar Interatividade com JavaScript</h2>
+        <p>O JavaScript é uma linguagem de programação que permite adicionar interatividade às suas páginas web. Você pode usar JavaScript para responder a eventos, manipular o DOM e muito mais.</p>
+        <pre><code>document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('myButton').addEventListener('click', () => {
+        alert('Você clicou no botão!');
+    });
+});</code></pre>
+        <p>Para adicionar seu script JavaScript ao HTML, inclua a seguinte linha antes do fechamento da tag &lt;/body&gt;:</p>
+        <pre><code>&lt;script src="main.js"&gt;&lt;/script&gt;</code></pre>
     </section>
 
     <section id="contato">
-        <h2>Contato</h2>
-        <p>Tem alguma dúvida? Entre em contato conosco!</p>
+        <h2>Entre em Contato</h2>
+        <p>Se você tiver dúvidas ou precisar de mais informações, sinta-se à vontade para entrar em contato!</p>
         <form id="contactForm">
             <label for="name">Nome:</label>
             <input type="text" id="name" name="name" required>
@@ -56,7 +92,7 @@
     </section>
 
     <footer>
-        <p>&copy; 2024 Aprenda a Criar uma Página na Internet</p>
+        <p>&copy; 2024 Guia para Criar uma Página na Internet</p>
     </footer>
 
     <script src="main.js"></script>
