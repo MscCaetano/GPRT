@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprenda a Criar uma Página na Internet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#intro">Introdução</a></li>
+                <li><a href="#conteudo">Conteúdo</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="intro" class="hero">
+        <h1>Aprenda a Criar uma Página na Internet</h1>
+        <p>Um guia passo a passo para começar a desenvolver suas próprias páginas web.</p>
+        <button id="learnMoreBtn">Saiba Mais</button>
+    </section>
+
+    <section id="conteudo">
+        <h2>Conteúdo</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>HTML</h3>
+                <p>O HTML é a estrutura básica de qualquer página web. Aprenda como usar tags e criar seu primeiro documento.</p>
+            </div>
+            <div class="card">
+                <h3>CSS</h3>
+                <p>O CSS é usado para estilizar sua página. Descubra como adicionar cores, fontes e layouts ao seu design.</p>
+            </div>
+            <div class="card">
+                <h3>JavaScript</h3>
+                <p>O JavaScript traz interatividade para sua página. Aprenda como adicionar funcionalidades dinâmicas e responder a eventos.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Tem alguma dúvida? Entre em contato conosco!</p>
+        <form id="contactForm">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Aprenda a Criar uma Página na Internet</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
